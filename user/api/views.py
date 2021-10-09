@@ -30,9 +30,13 @@ def users_by_lastname(request):
     return Response(serializer.data)
 
 
-@api_view(['PUT', 'DELETE'])
-def modify_user(request, pk):
+@api_view(['PUT', 'DELETE', 'GET'])
+def look_user(request, pk):
     users = User.objects.get(id = pk)
+
+    if request.method == 'GET':
+        serializer = UserSerializer(users)
+        return Response(serializer.data)
 
     if request.method == 'PUT':
         serializer = UserSerializer(users, data=request.data)
