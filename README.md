@@ -14,10 +14,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">API Usuarios</h3>
 
   <p align="center">
-    project_description
+    Simple API made with Django
     <br />
     <a href="https://github.com/laperezmu/api-usuarios"><strong>Explore the docs »</strong></a>
     <br />
@@ -57,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+The repository presents Django 3.2.8 with Django rest framework implementation of a simple API to consult users information
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -75,12 +75,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+You need Python3 in your computer before install this application. To check if you already have Python installed, copy and paste the next command:
+
 * Python3
   ```sh
   python --version
@@ -92,7 +90,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/lpaerezmu/api-usuarios.git
    ```
-2. Install required modules
+2. Install required modules (It's recommendable make and run a virtual enviroment before install dependencies)
    ```sh
    pip install - r requirements.txt
    ```
@@ -100,13 +98,44 @@ This is an example of how to list things you need to use the software and how to
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
+Open terminal at the directory of the project:
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Make migrate 
+  ```sh
+   python manage.py makemigrate
+   ```
+2. Migrate
+    ```sh
+   python manage.py migrate
+   ```
+3. Run the server
+   ```sh
+   python manage.py runserver
+   ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+This will run up the server locally at http://127.0.0.1:8000/ by default. The available endpoints are:
+
+ 1. users/
+    This endpoint will display the list of all users without any specificly order.
+    
+ 3. users/<id>
+    This endpoint have three different behaviours:
+      1. If the HTTP request method was GET, it's going to display all the data of the user with the id = <id>.
+      2. If the HTTP request method was PUT, it's going to update the data of the user with the id = <id> using the data from the request's body.
+      3. If the HTTP request method was DELETE, it's going to delete the user with the id = <id>
+  
+ 4. users/order-by-age/
+    This endpoint will display the list of all users order by the age in descending order
+  
+ 5. users/order-by-lastname/
+    This endpoint will display the list of all users order by the lastname in descending order
+  
+ 6. users/add/
+    This endpoint lets you add new users to the database 
+
+  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
