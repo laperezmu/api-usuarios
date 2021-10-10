@@ -103,7 +103,7 @@ You need Python3 in your computer before install this application. To check if y
 Open a terminal at the directory of the project:
 
 1. Make migrate 
-  ```sh
+   ```sh
    python manage.py makemigrate
    ```
 2. Migrate
