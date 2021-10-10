@@ -77,7 +77,7 @@ The repository presents Django 3.2.8 with Django rest framework implementation o
 
 ### Prerequisites
 
-You need Python3 in your computer before install this application. To check if you already have Python installed, copy and paste the next command:
+You need Python3 in your computer before install this application. To check if you already have Python installed, open a terminal and copy and paste the next command:
 
 * Python3
   ```sh
@@ -100,7 +100,7 @@ You need Python3 in your computer before install this application. To check if y
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-Open terminal at the directory of the project:
+Open a terminal at the directory of the project:
 
 1. Make migrate 
   ```sh
@@ -114,26 +114,26 @@ Open terminal at the directory of the project:
    ```sh
    python manage.py runserver
    ```
-
+<br/>
 This will run up the server locally at http://127.0.0.1:8000/ by default. The available endpoints are:
 
- 1. users/
-    This endpoint will display the list of all users without any specificly order.
-    
- 3. users/<id>
+ 1. users/<br/>
+    * This endpoint will display the list of all users without any specificly order.
+  <br/>  
+ 3. users/id<br/>
     This endpoint have three different behaviours:
-      1. If the HTTP request method was GET, it's going to display all the data of the user with the id = <id>.
-      2. If the HTTP request method was PUT, it's going to update the data of the user with the id = <id> using the data from the request's body.
-      3. If the HTTP request method was DELETE, it's going to delete the user with the id = <id>
-  
- 4. users/order-by-age/
-    This endpoint will display the list of all users order by the age in descending order
-  
- 5. users/order-by-lastname/
-    This endpoint will display the list of all users order by the lastname in descending order
-  
- 6. users/add/
-    This endpoint lets you add new users to the database 
+      * If the HTTP request method was GET, it's going to display all the data of the user with the igiven id
+      * If the HTTP request method was PUT, it's going to update the data of the user with the given id using the data from the request's body.
+      * If the HTTP request method was DELETE, it's going to delete the user with the given id
+  <br/>
+ 4. users/order-by-age/<br/>
+    * This endpoint will display the list of all users order by the age in descending order
+  <br/>
+ 5. users/order-by-lastname/<br/>
+    * This endpoint will display the list of all users order by the lastname in descending order
+  <br/>
+ 6. users/add/<br/>
+    * This endpoint lets you add new users to the database 
 
   
 
