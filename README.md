@@ -77,7 +77,7 @@ The repository presents Django 3.2.8 with Django rest framework implementation o
 
 ### Prerequisites
 
-You need Python3 in your computer before install this application. To check if you already have Python installed, open a terminal and copy and paste the next command:
+You need Python3 in your computer before install this application. To check if you already have Python3 installed, open a terminal and copy and paste the next command:
 
 * Python3
   ```sh
@@ -119,21 +119,21 @@ This will run up the server locally at http://127.0.0.1:8000/ by default. The av
 
  1. users/<br/>
     * This endpoint will display the list of all users without any specificly order.
-  <br/>  
- 3. users/id<br/>
-    This endpoint have three different behaviours:
-      * If the HTTP request method was GET, it's going to display all the data of the user with the igiven id
-      * If the HTTP request method was PUT, it's going to update the data of the user with the given id using the data from the request's body.
-      * If the HTTP request method was DELETE, it's going to delete the user with the given id
-  <br/>
- 4. users/order-by-age/<br/>
-    * This endpoint will display the list of all users order by the age in descending order
-  <br/>
- 5. users/order-by-lastname/<br/>
-    * This endpoint will display the list of all users order by the lastname in descending order
-  <br/>
- 6. users/add/<br/>
-    * This endpoint lets you add new users to the database 
+    <br/>  
+ 2. users/id<br/>
+    This endpoint have three different behaviours:<br/>
+      * If the HTTP request method was GET, it's going to display all the data of the user with the igiven id.<br/>
+      * If the HTTP request method was PUT, it's going to update the data of the user with the given id using the data from the request's body.<br/>
+      * If the HTTP request method was DELETE, it's going to delete the user with the given id.<br/>
+    <br/>
+ 3. users/order-by-age/<br/>
+    * This endpoint will display the list of all users order by the age in descending order.
+    <br/>
+ 4. users/order-by-lastname/<br/>
+    * This endpoint will display the list of all users order by the lastname in descending order.
+    <br/>
+ 5. users/add/<br/>
+    * This endpoint lets you add new users to the database.
 
   
 
