@@ -88,7 +88,7 @@ You need Python3 in your computer before install this application. To check if y
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/lpaerezmu/api-usuarios.git
+   git clone https://github.com/laperezmu/api-usuarios.git
    ```
 2. Install required modules (It's recommendable make and run a virtual enviroment before install dependencies)
    ```sh
@@ -122,7 +122,7 @@ This will run up the server locally at http://127.0.0.1:8000/ by default. The av
     <br/>  
  2. users/id<br/>
     This endpoint have three different behaviours:<br/>
-      * If the HTTP request method was GET, it's going to display all the data of the user with the igiven id.<br/>
+      * If the HTTP request method was GET, it's going to display all the data of the user with the given id.<br/>
       * If the HTTP request method was PUT, it's going to update the data of the user with the given id using the data from the request's body.<br/>
       * If the HTTP request method was DELETE, it's going to delete the user with the given id.<br/>
     <br/>
